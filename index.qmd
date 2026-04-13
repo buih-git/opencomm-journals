@@ -3,8 +3,9 @@ title: "Open Media and Communication Research"
 subtitle: "A curated list of journals for open science in media and communication research"
 format:
   html:
-    theme: flatly
+    theme: minty
     toc: false
+    css: styles.css
 ---
 
 Created by Moritz Büchi [[github](https://github.com/buih-git) | [profile](https://www.zhaw.ch/en/about-us/person/buih)], Michael Reiss, and Tobias Dienlin.  

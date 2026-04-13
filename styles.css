@@ -1,0 +1,11 @@
+.quarto-container {
+  max-width: 100% !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container, .container-fluid, .container-xl, .container-lg {
+  max-width: 100% !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
