@@ -1,0 +1,37 @@
+---
+title: "Open Media and Communication Research"
+subtitle: "A curated list of journals for open science in media and communication research"
+format:
+  html:
+    theme: flatly
+    toc: false
+---
+
+Created by Moritz Büchi [[github](https://github.com/buih-git) | [profile](https://www.zhaw.ch/en/about-us/person/buih)], Michael Reiss, and Tobias Dienlin.  
+Last update: 04/2026.
+
+**Inclusion criteria:** Open science features (hybrid open access alone does not qualify), peer-reviewed, publishes English language articles, focused on Media and Communication generally, on subdisciplines (e.g., science communication, media psychology, etc.), or generalist / other disciplinary journals open to Media and Communication (e.g., PLOS ONE)
+
+Feedback and corrections welcome via [GitHub Issues](https://github.com/buih-git/opencomm-journals/issues).
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(DT)
+
+url <- "https://docs.google.com/spreadsheets/d/1WDTBIop2Eg9CKsvQ1BUgMXJdmrh1TAreyS02SiWEJDY/export?format=csv&gid=0"
+
+df <- read_csv(url, skip = 3, col_names = TRUE) |>
+  select(2:21) |>
+  filter(!is.na(Journal)) |>
+  mutate(across(where(is.logical), ~ if_else(.x, "Yes", "No")))
+
+datatable(df,
+  filter = "top",
+  options = list(pageLength = 25, scrollX = TRUE),
+  rownames = FALSE
+)
+```
