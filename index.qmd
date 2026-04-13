@@ -6,6 +6,7 @@ format:
     theme: minty
     toc: false
     page-layout: full
+    css: styles.css
 ---
 
 Created by Moritz Büchi [[github](https://github.com/buih-git) | [profile](https://www.zhaw.ch/en/about-us/person/buih)], Michael Reiss, and Tobias Dienlin.  
