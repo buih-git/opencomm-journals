@@ -5,7 +5,7 @@ format:
   html:
     theme: minty
     toc: false
-    css: styles.css
+    page-layout: full
 ---
 
 Created by Moritz Büchi [[github](https://github.com/buih-git) | [profile](https://www.zhaw.ch/en/about-us/person/buih)], Michael Reiss, and Tobias Dienlin.  
